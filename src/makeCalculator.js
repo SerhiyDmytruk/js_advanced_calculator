@@ -23,7 +23,7 @@ function makeCalculator() {
       return this;
     },
     divide(numb) {
-      this.result = this.result / numb;
+      this.result /= numb;
 
       return this;
     },
@@ -33,7 +33,9 @@ function makeCalculator() {
       return this;
     },
     operate(callback, value) {
-      return callback.call(this, value);
+      callback.call(this, value);
+
+      return this;
     },
   };
 }
