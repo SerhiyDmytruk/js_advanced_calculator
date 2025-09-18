@@ -5,7 +5,8 @@
  */
 function makeCalculator() {
   // write code here
-  return {
+
+  const calculator = {
     result: 0,
     add(numb) {
       this.result += numb;
@@ -38,6 +39,8 @@ function makeCalculator() {
       return this;
     },
   };
+
+  return calculator;
 }
 
 module.exports = makeCalculator;
